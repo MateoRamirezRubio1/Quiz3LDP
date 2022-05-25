@@ -10,11 +10,11 @@ repite x y = sum(cuanto(map digitToInt(show(x))) y)
 main = do
   putStrLn "Ingrese una lista de numeros de corrido sin espacios: "
   lista <- getLine
-  putStrLn "Número de un dígito el cual desea saber cuanto se repite?:"
+  putStrLn "Número de un dígito el cual desea saber cuanto se muestra?:"
   numero <- getLine
   
   let list = read lista :: Int
   let num = read numero :: Int
 
-  putStrLn ("El número " ++ numero ++ " se repite:")
+  putStrLn ("El número " ++ numero ++ " se muestra:")
   print(repite list num)
